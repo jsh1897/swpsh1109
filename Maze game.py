@@ -196,7 +196,9 @@ for i in range(len(MAP)):
                     )
                walls.append(wall) #wall 객체의 정보를 walls 배열 안에 저장합니다.
           coin = Coin(i,j) # 길목에 모두 코인 배치
+              
           coins.append(coin) # 코인들 배열 저장
+          
           
          
 Ground = Entity(
