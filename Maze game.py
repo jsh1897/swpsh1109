@@ -71,7 +71,7 @@ class Warp(Entity):
           super().__init__( #Entity의 속성을 그대로 물려받아 초기화하기 위해 작성하는 구문
                warp = Entity(
                     model = 'cube',
-                    color = color.rgb32(165,82,42),
+                    color = color.rgba(165,82,42),
                     texture = 'brick', #이 부분은 작성하지 않고 추후에 따로 추가해도됩니다.
                     position = (x * 5, 1.5, z * 5),
                     scale = (5, 5, 5),
@@ -175,7 +175,7 @@ for i in range(len(MAP)):
 
                wall = Entity(                
                     model = 'cube',
-                    color = color.rgb32(165,82,42),
+                    color = color.rgba(165,82,42),
                     position = (i * 5, 1.5, j * 5),
                     scale = (5,5,5),
                     collider = 'box',
